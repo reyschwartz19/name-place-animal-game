@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFE668;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    font-family: "poppins", sans-serif;
+    flex-direction: column;
+}
+.gamescreen{
+    margin: auto;
+    width: 70vw;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #feffc6;
+    box-shadow: 4px 4px 0 #000;
+}
+.header{
+    width: 100%;
+    height: 70px;
+    margin: 20px;
+}
+.quit{
+    width: 60px;
+    height: auto;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.letter-timer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    text-align: center;
+}
+.letter-timer h1{
+    font-weight: 300;
+}
+.letter-timer span{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "quicksand", sans-serif;
+}
+.answer-sheet fieldset{
+    border: none;
+    margin: 20px 0;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+.user-input{
+    display: grid;
+    grid-template-columns: 120px 1fr;
+}
+.answer-sheet input{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    padding: 0 10px;
+    font-size: 18px;
+}
+.submit{
+    background-color: #3aaf47;
+    color: white;
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}

@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFE668;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    font-family: "poppins", sans-serif;
+}
+.joinroom{
+    margin: auto;
+    width: 50vw;
+    
+    border-radius: 10px;
+    background-color: #feffc6;
+    box-shadow: 4px 4px 0 #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    padding: 10px;
+}
+.joinroom h1{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-family: "quicksand", sans-serif;
+}
+.joinroom input{
+    width: 100%;
+    height: 50px;
+    margin: 10px auto;
+    padding: 0 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: large;
+    background-color: #fff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 70px;
+
+}
+button{
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 17px;
+}
+.return{
+    background-color: #2b7a78;
+    color: white;
+}
+.join{
+    background-color: #3aaf47;
+    color: white;
+}
+.playername input{
+    width: 430px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    padding: 0 10px;
+    font-size: large;
+    margin: 10px 0;
+    display: block;
+}
+.playername label{
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: bold;
+}
+.namebutton{
+    background-color: #3aaf47;
+    color: white;
+    
+}
+.userinput{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 0;
+    
+}
+.roomcodeform label{
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+    font-weight: bold;
+}
