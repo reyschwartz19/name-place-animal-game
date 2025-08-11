@@ -9,16 +9,22 @@ body{
     align-items: center;
     display: flex;
     height: 100vh;
+    width: 100vw;
     font-family: "poppins", sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 .homescreen{
     margin: auto;
-    width: 50vw;
-    height: 60vh;
+    max-width: 50vw;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     border-radius: 10px;
     background-color: #feffc6;
     box-shadow: 4px 4px 0 #000;
+    
+    justify-content: center;
 }
 .homescreen h1{
     text-align: center;
@@ -26,6 +32,9 @@ body{
     color: #333;
     margin-bottom: 30px;
     font-family: "quicksand", sans-serif;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 .homescreen button{
     width: 50%;
@@ -40,7 +49,45 @@ body{
     font-size: large;
     
 }
+
+.homescreen button:hover{
+    background-color: #9c5b2a;
+}
+
 a{
     text-decoration: none;
     
+}
+@media (max-width: 414px){
+    .homescreen{
+        min-width: 95%;
+        min-height: 95%;
+    }
+    .homescreen h1{
+        font-size: 1.5rem;
+    }
+    .homescreen button{
+        width: 80%;
+        height: 50px;
+        font-size: 1rem;
+    }
+   body{
+        padding: 10px;
+    }
+   }
+
+@media (max-width: 1024px) and (min-width: 415px){
+    .homescreen{
+        min-width: 80%;
+        min-height: 80%;
+      
+    }
+    .homescreen h1{
+        font-size: 2.5rem;
+    }
+    .homescreen button{
+        width: 60%;
+        height: 60px;
+        font-size: 1.5rem;
+    }
 }

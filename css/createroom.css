@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 body{
     background-color: #FFE668;
@@ -9,12 +10,18 @@ body{
     align-items: center;
     display: flex;
     height: 100vh;
+    width: 100%;
+    padding: 30px;
     font-family: "poppins", sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 .createroom{
     margin: auto;
     width: 50vw;
-    
+    display: flex;
+    flex-direction: column;
+
     padding: 20px;
     border-radius: 10px;
     background-color: #feffc6;
@@ -74,18 +81,25 @@ button{
     height: 40px;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
 }
 .return{
     background-color: #2b7a78;
     color: white;
 }
+.return:hover{
+    background-color: #4f9492;
+}
 .startgame{
     background-color: #3aaf47;
     color: white;
+    
 }
-
-.playername input{
-    width: 500px;
+.startgame:hover{
+    background-color: #5bb365;
+}
+.entername input{
+    width: 80%;
     height: 40px;
     border-radius: 5px;
     border: none;
@@ -94,7 +108,15 @@ button{
     margin: 10px 0;
     display: block;
 }
-.playername label{
+.entername{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.entername label{
     font-size: 20px;
     margin-bottom: 10px;
     display: block;
@@ -105,10 +127,58 @@ button{
     color: white;
     
 }
+.namebutton:hover{
+    background-color: #5bb365;
+}
 .userinput{
     width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
     
+}
+@media (max-width: 414px){
+    .createroom{
+        min-width: 95%;
+        min-height: 95%;
+        margin: 0;
+    }
+    .createroom h1{
+        font-size: 1.5rem;
+    }
+    .player{
+        width: 90%;
+        height: 60px;
+        font-size: 1rem;
+    }
+    .buttons{
+        padding: 0 20px;
+    }
+    button{
+        width: 70px;
+        height: 30px;
+        font-size: small;
+    }
+    body{
+        padding: 10px;
+    }
+}
+@media (max-width: 1024px) and (min-width: 415px){
+    .createroom{
+        min-width: 80%;
+        min-height: 80%;
+    }
+    .createroom h1{
+        font-size: 2.5rem;
+    }
+    .player{
+        width: 80%;
+        height: 80px;
+        font-size: 1.5rem;
+    }
+    button{
+        width: 90px;
+        height: 40px;
+        font-size: 1rem;
+    }
 }

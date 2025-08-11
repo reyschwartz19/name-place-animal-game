@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 1px solid red;
 }
 body{
     background-color: #FFE668;
@@ -9,8 +10,11 @@ body{
     align-items: center;
     display: flex;
     height: 100vh;
+    max-width: 100%;
     font-family: "poppins", sans-serif;
     flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 .gamescreen{
     margin: auto;
@@ -19,6 +23,9 @@ body{
     border-radius: 10px;
     background-color: #feffc6;
     box-shadow: 4px 4px 0 #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .header{
     width: 100%;
@@ -62,9 +69,10 @@ body{
 .user-input{
     display: grid;
     grid-template-columns: 120px 1fr;
+    width: 100%;
 }
 .answer-sheet input{
-    width: 200px;
+    width: 100%;
     height: 40px;
     border: none;
     border-radius: 10px;
@@ -78,4 +86,45 @@ body{
     height: 40px;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: #4fcf5c;
+}
+@media (max-width: 414px){
+    .gamescreen{
+       min-width : 95%;
+        min-height: 90%;
+       
+    }
+    .header{
+        height: 50px;
+    }
+    .quit{
+        width: 40px;
+    }
+    .letter-timer{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+        
+    form{
+        font-size: 1rem;
+    }
+    .letter-timer span{
+        font-size: 1.5rem;
+    }
+    .letter-timer h1{
+        font-size: 1.2rem;
+    }
+    .user-input{
+        grid-template-columns: 80px 1fr;
+    }
+}
+@media (max-width: 1024px) and (min-width: 415px){
+    .gamescreen{
+        min-width: 80%;
+        min-height: 80%;
+    }
 }
