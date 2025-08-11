@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 body{
     background-color: #FFE668;
@@ -9,12 +10,15 @@ body{
     align-items: center;
     display: flex;
     height: 100vh;
+    width: 100vw;
     font-family: "poppins", sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 .joinroom{
     margin: auto;
     width: 50vw;
-    
+    justify-content: center;
     border-radius: 10px;
     background-color: #feffc6;
     box-shadow: 4px 4px 0 #000;
@@ -31,7 +35,7 @@ body{
     margin-bottom: 30px;
     font-family: "quicksand", sans-serif;
 }
-.joinroom input{
+input{
     width: 100%;
     height: 50px;
     margin: 10px auto;
@@ -42,6 +46,8 @@ body{
     background-color: #fff;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
+
+
 .buttons{
     display: flex;
     width: 100%;
@@ -64,16 +70,7 @@ button{
     background-color: #3aaf47;
     color: white;
 }
-.playername input{
-    width: 430px;
-    height: 50px;
-    border-radius: 5px;
-    border: none;
-    padding: 0 10px;
-    font-size: large;
-    margin: 10px 0;
-    display: block;
-}
+
 .playername label{
     font-size: 20px;
     margin-bottom: 10px;
@@ -85,17 +82,80 @@ button{
     color: white;
     
 }
+.namebutton:hover{
+    background-color: #5bb365;
+}
 .userinput{
-    width: 100%;
-    display: flex;
+    width: 67%;
+    
     justify-content: center;
     text-align: center;
     margin: 10px 0;
     
 }
+
 .roomcodeform label{
     font-size: 20px;
     margin-bottom: 10px;
     
     font-weight: bold;
+}
+button{
+    cursor: pointer;
+}
+.return:hover{
+    background-color: #4f9492;
+}
+.join:hover{
+    background-color: #5bb365;
+}
+@media (max-width: 414px){
+    .joinroom{
+        width: 95%;
+        height: 95%;
+    }
+    .userinput{
+        width: 100%;
+    }
+    .joinroom h1{
+        font-size: 1.5rem;
+    }
+    button{
+        font-size: small;
+    }
+    input{
+        height: 40px;
+        font-size: 1rem;
+    }
+    .roomcodeform label,
+    .playername label{
+        font-size: 1rem;
+    }
+}
+@media(max-width: 1024px) and (min-width: 415px){
+    .joinroom{
+        width: 80%;
+        height: 90%;
+    }
+    .joinroom h1{
+        font-size: 2rem;
+    }
+    input{
+        
+        height: 45px;
+        font-size: 1.2rem;
+    }
+    .userinput{
+        width: 57%;
+    }
+    button{
+        font-size: medium;
+    }
+    .roomcodeform label,
+    .playername label{
+        font-size: 1.2rem;
+    }
+    .joinroom h1{
+        font-size: 2rem;
+    }
 }

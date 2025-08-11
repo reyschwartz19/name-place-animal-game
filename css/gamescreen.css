@@ -125,6 +125,27 @@ body{
 @media (max-width: 1024px) and (min-width: 415px){
     .gamescreen{
         min-width: 80%;
-        min-height: 80%;
+        min-height: 90%;
+    }
+    .header{
+        height: 60px;
+    }
+    .quit{
+        width: 50px;
+    }
+    .letter-timer{
+        height: 60px;
+    }
+    form{
+        font-size: 1.2rem;
+    }
+    .letter-timer span{
+        font-size: 1.8rem;
+    }
+    .letter-timer h1{
+        font-size: 1.5rem;
+    }
+    .user-input{
+        grid-template-columns: 100px 1fr;
     }
 }
