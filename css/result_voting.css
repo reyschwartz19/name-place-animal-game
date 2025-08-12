@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+    outline: 1px solid red;
 }
 body {
      background-color: #FFE668;
@@ -132,4 +132,27 @@ body {
         overflow-y: auto;
     }
 }
-
+@media (max-width: 1024px) and (min-width: 415px){
+    .result-voting{
+        width: 80%;
+    }
+    .player-result{
+        width: 45%;
+    }
+    .result-table th, .result-table td {
+        font-size: 1.5rem;
+    }
+    .submit{
+        width: 80%;
+        height: 50px;
+        font-size: medium;
+    }
+    .result-poll{
+        
+        overflow-y: auto;
+    }
+    body{
+        min-height: 100%;
+        padding: 10px;
+    }
+}
